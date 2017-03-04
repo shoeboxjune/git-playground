@@ -29,11 +29,6 @@ def createDeck():
     return deck
 
 
-testDeck = createDeck()
-print(testDeck)
-print(len(testDeck))
-
-
 def shuffleDeck(deckList):
     """
     Shuffles a deck of cards (a list) without using the shuffle function
@@ -48,6 +43,8 @@ def shuffleDeck(deckList):
     return shuffledDeck
 
 
-shuffled = shuffleDeck(testDeck)
-print(shuffled)
-print(len(shuffled))
+testDeck = createDeck()
+print("My deck of cards: ")
+print(testDeck)
+print("My shuffled deck of cards: ")
+print(shuffleDeck(testDeck))
